@@ -5,9 +5,18 @@
   box-sizing: border-box;
 }
 
+*:focus {
+outline: none;
+}
+
+html,body{
+    height: 100vh;
+}
+
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 2em;
+  --margin: 2em;
+  margin:0px;
 }
 
 h1 {
@@ -24,7 +33,7 @@ p {
 }
 
 form {
-  margin-bottom: 25px;
+  --margin-bottom: 25px;
   padding: 15px;
   background-color: cyan;
   display: inline-block;
@@ -32,6 +41,8 @@ form {
   max-width: 340px;
   border-radius: 3px;
 }
+
+
 
 input {
   display: block;
@@ -42,6 +53,8 @@ input {
   border-radius: 3px;
   font-size: 16px;
 }
+
+
 
 button {
   font-size: 16px;
@@ -60,6 +73,337 @@ button:active {
   box-shadow: none;
 }
 
+div.left-parts-area {
+  width:30%;
+  height: 100%;
+  float : left;
+  --background-color: blue;
+}
+
+div.center-parts-area {
+  width:40%;
+  height: 100%;
+  float : left;
+  --background-color: red;
+}
+
+div.right-parts-area {
+  width:30%;
+  height: 100%;
+  float : left;
+  --background-color: yellow;
+}
+
+
+/**  **/
+.left-parts-area-top{
+  width: 100%;
+  height: 40%;
+  --background-color: powderblue;
+}
+
+.left-parts-area-bottom{
+  width: 100%;
+  height: 60%;
+  --background-color: blue;
+}
+
+div.left-controller-up,.left-controller-down{
+  width: 33%;
+  height: 33%;
+  margin : 0 auto;
+}
+div.left-controller-left-right{
+  width: 100%;
+  height: 33%;
+  margin : 0 auto;
+}
+
+input.left-parts-button-left{
+  width: 40%;
+  height: 100%;
+  float: left;
+  margin:0px 5% ;
+}
+input.left-parts-button-right{
+  width: 40%;
+  height: 100%;
+  float: left;
+  margin:0px 5% ;
+}
+
+input.left-parts-button-up,.left-parts-button-down{
+  width: 100%;
+  height: 100%;
+}
+
+/** 左側上ボタン **/
+.left-parts-button-up{
+  background: url("https://cdn.glitch.com/8277b289-7213-49c7-b94f-9a22e16eb5d3%2Fupbtn_nomal.png?v=1567852542542") no-repeat 0 0;
+  background-size:contain;
+  background-position: center;
+  border:0;
+}
+.left-parts-button-up:active{
+  background: url("https://cdn.glitch.com/8277b289-7213-49c7-b94f-9a22e16eb5d3%2Fupbtn_active.png?v=1567852535196") no-repeat 0 0;
+  background-size:contain;
+  background-position: center;
+  border:0;
+}
+
+/** 左側下ボタン **/
+.left-parts-button-down{
+  background: url("https://cdn.glitch.com/73c5dfe5-750e-45fb-b21d-013f88390f22%2Fdownbtn_nomal.png?v=1571449854893") no-repeat 0 0;
+  background-size:contain;
+  background-position: center;
+  border:0;
+}
+.left-parts-button-down:active{
+  background: url("https://cdn.glitch.com/73c5dfe5-750e-45fb-b21d-013f88390f22%2Fdownbtn_active.png?v=1571449845167") no-repeat 0 0;
+  background-size:contain;
+  background-position: center;
+  border:0;
+}
+/** 左側右ボタン **/
+.left-parts-button-right{
+  background: url("https://cdn.glitch.com/73c5dfe5-750e-45fb-b21d-013f88390f22%2Frightbtn_nomal.png?v=1571449137897") no-repeat 0 0;
+  background-size:contain;
+  background-position: center;
+  border:0;
+}
+.left-parts-button-right:active{
+  background: url("https://cdn.glitch.com/73c5dfe5-750e-45fb-b21d-013f88390f22%2Frightbtn_active.png?v=1571449142405") no-repeat 0 0;
+  background-size:contain;
+  background-position: center;
+  border:0;
+}
+/** 左側左ボタン **/
+.left-parts-button-left{
+  background: url("https://cdn.glitch.com/73c5dfe5-750e-45fb-b21d-013f88390f22%2Fleftbtn_nomal.png?v=1571449177984") no-repeat 0 0;
+  background-size:contain;
+  background-position: center;
+  border:0;
+}
+.left-parts-button-left:active{
+  background: url("https://cdn.glitch.com/73c5dfe5-750e-45fb-b21d-013f88390f22%2Fleftbtn_active.png?v=1571449767975") no-repeat 0 0;
+  background-size:contain;
+  background-position: center;
+  border:0;
+}
+
+/** 中央 **/
+.center-head-area{
+  width: 100%;
+  height: 20%;
+  --background-color: black;
+}
+
+.center-body-area{
+  width: 100%;
+  height: 80%;
+}
+
+.screen-body{
+  height:100%;
+  
+}
+
+
+
+
+/** ↓右側表示エリア上段　コントtローラー部 **/
+.right-parts-area-head{
+  width: 100%;
+  height: 10%;
+  --background-color: black;
+}
+
+
+div.right-parts-area-top{
+  width: 100%;
+  height: 50%;
+  --background-color: green;
+}
+
+div.area-size{
+  width: 100%;
+  height: 33%;
+}
+
+div.button-area-size{
+  width: 33%;
+  height: 100%;
+  float:left;
+}
+
+.right-parts-button-up,.right-parts-button-turnright,.right-parts-button-turnleft,.right-parts-button-down{
+  width:100%;
+  height:100%;
+  margin:0px;
+}
+
+
+/** 上側ボタン **/
+.right-parts-button-up{
+  background: url("https://cdn.glitch.com/73c5dfe5-750e-45fb-b21d-013f88390f22%2Fforward_nomal.png?v=1571449783612") no-repeat 0 0;
+  background-size:contain;
+  background-position: center;
+  border:0;
+}
+.right-parts-button-up:active{
+  background: url("https://cdn.glitch.com/73c5dfe5-750e-45fb-b21d-013f88390f22%2Fforward_active.png?v=1571449795103") no-repeat 0 0;
+  background-size:contain;
+  background-position: center;
+  border:0;
+}
+/** 右回りボタン **/
+.right-parts-button-turnright{
+  background: url("https://cdn.glitch.com/73c5dfe5-750e-45fb-b21d-013f88390f22%2Frotationright_nomal.png?v=1571449041588") no-repeat 0 0;
+  background-size:contain;
+  background-position: center;
+  border:0;
+}
+.right-parts-button-turnright:active{
+  background: url("https://cdn.glitch.com/73c5dfe5-750e-45fb-b21d-013f88390f22%2Frotationright_active.png?v=1571449052427") no-repeat 0 0;
+  background-size:contain;
+  background-position: center;
+  border:0;
+}
+/** 左回りボタン **/
+.right-parts-button-turnleft{
+  background: url("https://cdn.glitch.com/73c5dfe5-750e-45fb-b21d-013f88390f22%2Frotationleft_nomal.png?v=1571449062664") no-repeat 0 0;
+  background-size:contain;
+  background-position: center;
+  border:0;
+}
+.right-parts-button-turnleft:active{
+  background: url("https://cdn.glitch.com/73c5dfe5-750e-45fb-b21d-013f88390f22%2Frotationleft_active.png?v=1571449106076") no-repeat 0 0;
+  background-size:contain;
+  background-position: center;
+  border:0;
+}
+/** 下側ボタン **/
+.right-parts-button-down{
+  background: url("https://cdn.glitch.com/73c5dfe5-750e-45fb-b21d-013f88390f22%2Fback_nomal.png?v=1571449827840") no-repeat 0 0;
+  background-size:contain;
+  background-position: center;
+  border:0;
+}
+.right-parts-button-down:active{
+  background: url("https://cdn.glitch.com/73c5dfe5-750e-45fb-b21d-013f88390f22%2Fback_active.png?v=1571449840435") no-repeat 0 0;
+  background-size:contain;
+  background-position: center;
+  border:0;
+}
+
+
+
+/** ↑右側表示エリア上段　コントtローラー部 **/
+
+/** ↓右側表示エリア下段　コントtローラー部 **/
+div.right-parts-area-bottom{
+  width: 100%;
+  height: 40%;
+  --background-color: yellow;
+}
+div.right-bottom-front, .right-bottom-back{
+  width: 100%;
+  height: 50%;
+}
+
+.right-parts-button-front, .right-parts-button-back{
+  width: 50%;
+  height: 90%;
+  margin: 0 auto;
+}
+
+/** 前ボタン **/
+.right-parts-button-front{
+  background: url("https://cdn.glitch.com/73c5dfe5-750e-45fb-b21d-013f88390f22%2Fforward_nomal.png?v=1571449783612") no-repeat 0 0;
+  background-size:contain;
+  background-position: center;
+  border:0;
+}
+.right-parts-button-front:active{
+  background: url("https://cdn.glitch.com/73c5dfe5-750e-45fb-b21d-013f88390f22%2Fforward_active.png?v=1571449795103") no-repeat 0 0;
+  background-size:contain;
+  background-position: center;
+  border:0;
+}
+
+/** 後ろボタン **/
+.right-parts-button-back{
+  background: url("https://cdn.glitch.com/73c5dfe5-750e-45fb-b21d-013f88390f22%2Fback_nomal.png?v=1571449827840") no-repeat 0 0;
+  background-size:contain;
+  background-position: center;
+  border:0;
+}
+.right-parts-button-back:active{
+  background: url("https://cdn.glitch.com/73c5dfe5-750e-45fb-b21d-013f88390f22%2Fback_active.png?v=1571449840435") no-repeat 0 0;
+  background-size:contain;
+  background-position: center;
+  border:0;
+}
+
+
+/** ↑右側表示エリア下段　コントtローラー部 **/
+
+
+
+
+
+
+
+input.reset-button{
+  width:50%;
+  margin: 0 0 0 auto;
+  background: url("https://cdn.glitch.com/73c5dfe5-750e-45fb-b21d-013f88390f22%2Fresertbtn_nomal.png?v=1571449163237") no-repeat 0 0;
+  background-size:contain;
+  background-position: center;
+  border:0;
+}
+
+.reset-button:active{
+  width:50%;
+  margin: 0 0 0 auto;
+  background: url("https://cdn.glitch.com/73c5dfe5-750e-45fb-b21d-013f88390f22%2Fresertbtn_active.png?v=1571449167398") no-repeat 0 0;
+  background-size:contain;
+  background-position: center;
+  border:0;
+}
+
+.reset-button{
+  position:relative;
+  top:40%;
+  }
+
+.screen-body{
+  
+  
+}
+
+div.sample {
+  float: left;
+  clear: both;
+  overflow: auto;
+}
+
+div.sample a {
+  width: 300px;
+  height: 200px;
+  border: none;
+  display: block;
+  text-indent: -9999px;
+  cursoe: pointer;
+  background: url("https://cdn.glitch.com/8277b289-7213-49c7-b94f-9a22e16eb5d3%2Fupbtn_nomal.png?v=1567852542542") no-repeat 0 0;
+}
+
+div.sample a:active{
+  background-image: url("https://cdn.glitch.com/8277b289-7213-49c7-b94f-9a22e16eb5d3%2Fupbtn_active.png?v=1567852535196");
+}
+
+
+
 li {
   margin-bottom: 5px;
 }
@@ -69,3 +413,5 @@ footer {
   padding-top: 25px;
   border-top: 1px solid lightgrey;
 }
+
+
