@@ -1,4 +1,4 @@
-Welcome to Glitch!!
+Welcome to Glitch!! by Oda2017
 ===================
 
 Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
@@ -8,8 +8,8 @@ Click `Show` in the header to see your app live. Updates to your code will insta
 Find out more [about Glitch](https://glitch.com/about).
 
 
-Your Project
-------------
+Your Project!!!
+---------------
 
 On the front-end,
 - edit `public/client.js`, `public/style.css` and `views/index.html`

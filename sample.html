@@ -1,0 +1,18 @@
+<head>
+  <title>RTMP to MPEG-DASH</title>
+  <meta charset="UTF-8">
+  <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
+  <style>
+    video {
+      width: 640px;
+      height: 360px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <!-- rtmp://localhost:1935/live/test に配信した際に生成される MPEG-DASH の URLを指定 -->
+    <video data-dashjs-player autoplay src="http://localhost/test.mpd" controls></video>
+  </div>
+</body>
