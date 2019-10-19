@@ -1,4 +1,4 @@
-Welcome to Glitch!! by Oda2017
+Welcome to Glitch!! by Oda
 ===================
 
 Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.

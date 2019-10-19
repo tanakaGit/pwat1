@@ -11,7 +11,7 @@ const dreams = [
 ];
 
 // define variables that reference elements on our page
-const dreamsList = document.getElementById('dreams');
+/**const dreamsList = document.getElementById('dreams');
 const dreamsForm = document.forms[0];
 const dreamInput = dreamsForm.elements['dream'];
 
@@ -39,4 +39,15 @@ dreamsForm.onsubmit = function(event) {
   // reset form 
   dreamInput.value = '';
   dreamInput.focus();
-};
+};**/
+
+/**document.querySelector('.buttonAction').addEventListener('touchstart', function() {
+  //flag = true;
+  
+  // 何らかの処理
+  foo();
+});**/
+
+function doSend(value){
+  alert(value);
+}
