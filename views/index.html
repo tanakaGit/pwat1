@@ -12,7 +12,7 @@
   <head>
     <title>Welcome to Glitch!</title>
     <meta name="description" content="A cool thing made with Glitch">
-    <!--<link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">-->
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,105 +24,24 @@
     <script src="/client.js" defer></script>
   </head>
   <body>
-      <!-- 左側の表示領域 -->
-      <div class="left-parts-area">
-        <div class="left-parts-area-top">
-        </div>
-        
-        <div class="left-parts-area-bottom">
-          <div class="left-controller-up">
-            <input type="button" class="left-parts-button-up" onclick="doSend(1)">
-          </div>
-          <div class="left-controller-left-right">
-            <input type="button" class="left-parts-button-left"  onclick="doSend(2)">
-            <input type="button" class="left-parts-button-right" onclick="doSend(3)">
-          </div>
-          <div class="left-controller-down">
-            <input type="button" class="left-parts-button-down"  onclick="doSend(4)">
-          </div>
-        </div>
-        
+    <header>
+      <h1>
+        TODO List
+      </h1>
+    </header>
+
+    <main>
+      <p class="bold">pull everything out your mind</p>
+      
+      <p>add new Tasks</p>
+      
+      <div class="sample">
+         <a>XXX</a>
       </div>
-      
-      <!-- 中央の表示領域 -->
-      <div class="center-parts-area">
-        <div class="center-head-area">
-          <input type="button" class="reset-button"  onclick="doSend('reset')">
-        </div>
-        <div class="center-body-area">
-          <div class="screen-body">
-            <!--<iframe src="https://www.google.com/" width="100%" height="70%"></iframe>-->
-            <video src="index.m3u8" width="100%" height="70%" controls></video>
-          </div>
-        </div>
-      </div>
-      
-      <!-- 右側の表示領域 -->
-      <div class="right-parts-area">
-        <div class="right-parts-area-head">
-        </div>
-        <div class="right-parts-area-top">
-          <div class="area-size">
-            <div class="button-area-size">
-            </div>
-            <div class="button-area-size">
-              <input type="button" class="right-parts-button-up"  onclick="doSend(5)">
-            </div>
-            <div class="button-area-size">
-            </div>
-          </div>
-          <div class="area-size">
-            <div class="button-area-size">
-              <input type="button" class="right-parts-button-turnleft"  onclick="doSend(6)">
-            </div>
-            <div class="button-area-size">
-            </div>
-            <div class="button-area-size">
-              <input type="button" class="right-parts-button-turnright"  onclick="doSend(7)">
-            </div>
-          </div>
-          <div class="area-size">
-            <div class="button-area-size">
-            </div>
-            <div class="button-area-size">
-              <input type="button" class="right-parts-button-down"  onclick="doSend(8)">
-            </div>
-            <div class="button-area-size">
-            </div>
-          </div>
-          
-          
-        </div>
-        <div class="right-parts-area-bottom">
-          <div class="right-bottom-front"> 
-            <input type="button" class="right-parts-button-front"  onclick="doSend(9)">
-          </div>
-          <div class="right-bottom-back">
-            <input type="button" class="right-parts-button-back"  onclick="doSend(10)">
-          </div>
-        </div>
-        
-      </div>
-      
-      
-      
-      
-      
-      
-      <!--
-          ボタン表示サンプル
-          <div class="sample">
-            <a>XXX</a>
-          </div>
-      -->
-      
-      
-      
-      
-      
-      
     
-      <!--<<form>
+      <form>
+
+        
         <input name="dream" type="text" maxlength="100" placeholder="Task" aria-labelledby="submit-dream">
         <button type="submit" id="submit-dream">Add</button>
         
@@ -135,7 +54,7 @@
 
     <footer>
       Made with <a href="https://glitch.com">Glitch</a>!
-    </footer>-->
+    </footer>
 
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
