@@ -31,14 +31,14 @@
         
         <div class="left-parts-area-bottom">
           <div class="left-controller-up">
-            <input type="button" class="left-parts-button-up" onclick="doSend(1)">
+            <input id="l-b-up" type="button" class="left-parts-button-up" onclick="doMakeArr(2,1)">
           </div>
           <div class="left-controller-left-right">
-            <input type="button" class="left-parts-button-left"  onclick="doSend(2)">
-            <input type="button" class="left-parts-button-right" onclick="doSend(3)">
+            <input id="l-b-left" type="button" class="left-parts-button-left"  onclick="doMakeArr(0,2)">
+            <input id="l-b-right" type="button" class="left-parts-button-right" onclick="doMakeArr(0,1)">
           </div>
           <div class="left-controller-down">
-            <input type="button" class="left-parts-button-down"  onclick="doSend(4)">
+            <input id="l-b-down" type="button" class="left-parts-button-down"  onclick="doMakeArr(2,2)">
           </div>
         </div>
         
@@ -47,12 +47,13 @@
       <!-- 中央の表示領域 -->
       <div class="center-parts-area">
         <div class="center-head-area">
-          <input type="button" class="reset-button"  onclick="doSend('reset')">
+          <input type="button" class="reset-button"  onclick="doReset()">
         </div>
         <div class="center-body-area">
           <div class="screen-body">
             <!--<iframe src="https://www.google.com/" width="100%" height="70%"></iframe>-->
-            <video src="index.m3u8" width="100%" height="70%" controls></video>
+            <!--<video src="index.m3u8" width="100%" height="70%" controls></video>-->
+            <img src="http://192.168.0.130:8080/?action=stream" width="320" height="240"/> 
           </div>
         </div>
       </div>
@@ -66,26 +67,26 @@
             <div class="button-area-size">
             </div>
             <div class="button-area-size">
-              <input type="button" class="right-parts-button-up"  onclick="doSend(5)">
+              <input id="r-b-up" type="button" class="right-parts-button-up"  onclick="doMakeArr(4,1)">
             </div>
             <div class="button-area-size">
             </div>
           </div>
           <div class="area-size">
             <div class="button-area-size">
-              <input type="button" class="right-parts-button-turnleft"  onclick="doSend(6)">
+              <input id="r-b-turnleft" type="button" class="right-parts-button-turnleft"  onclick="doMakeArr(3,2)">
             </div>
             <div class="button-area-size">
             </div>
             <div class="button-area-size">
-              <input type="button" class="right-parts-button-turnright"  onclick="doSend(7)">
+              <input id="r-b-turnright" type="button" class="right-parts-button-turnright"  onclick="doMakeArr(2,1)">
             </div>
           </div>
           <div class="area-size">
             <div class="button-area-size">
             </div>
             <div class="button-area-size">
-              <input type="button" class="right-parts-button-down"  onclick="doSend(8)">
+              <input id="r-b-down" type="button" class="right-parts-button-down"  onclick="doMakeArr(4,2)">
             </div>
             <div class="button-area-size">
             </div>
@@ -95,10 +96,10 @@
         </div>
         <div class="right-parts-area-bottom">
           <div class="right-bottom-front"> 
-            <input type="button" class="right-parts-button-front"  onclick="doSend(9)">
+            <input id="r-b-front" type="button" class="right-parts-button-front"  onclick="doMakeArr(1,1)">
           </div>
           <div class="right-bottom-back">
-            <input type="button" class="right-parts-button-back"  onclick="doSend(10)">
+            <input id="r-b-back" type="button" class="right-parts-button-back"  onclick="doMakeArr(1,2)">
           </div>
         </div>
         
@@ -140,8 +141,8 @@
 
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js"></script>
+    <!--<div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>-->
 
   </body>
 </html>
